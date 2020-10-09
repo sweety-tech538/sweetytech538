@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scaile=1.0">
+     <title>HAPPY</title>
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet">
+<style type="text/css">
+  *{
+  margin:0;
+  padding: 0;
+  font-family:sans-serif;
+}
+body
+ {
+      margin: 0;
+      padding: 0;
+      font-family: 'Popping',sans-serif;
+      background:#2a5B3c ;
+    background-size: cover;
+      background-attachment: fixed;
+ }
+header{
+  position: relative;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding:  10px;
+  width: 100%;
+    background: black;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+
+}
+.logo
+  {
+   color:#069370;
+   height: 60px;
+   font-size: 36px;
+   line-height: 60px;
+   padding: 0 20px;
+   background: #ccc;
+   text-align: center;
+   box-sizing: border-box;
+   float: left;
+   font-weight: 700;
+   text-decoration: none;
+  } 
+
+nav { 
+    float: right; 
+}
+.clearfix{
+  clear: both;
+}
+nav ul{
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li a{
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+nav ul li a.active,
+nav ul li:hover{
+  background: #069370;
+  color: #fff;
+  transition: 0.5s;
+
+}
+@media (max-width: 1200px)
+{
+  header{
+    margin: 20px;
+  }
+}
+@media (max-width: 768px)
+ {
+  .menu-toggle
+     {
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+      background: #ccc;
+      float: right;
+      cursor: pointer;
+      text-align: center;
+      font-size: 30px;
+      color: #069370;
+     }
+    .menu-toggle:before
+    {
+      content: '\f0c9';
+      font-family: fontAwesome;
+      line-height: 40px;
+    }
+    .menu-toggle.active:before
+    {
+      content: '\f00d';
+    }
+    nav
+    {
+      display: none;
+    }
+    nav.active
+    {
+      display: block;
+      width: 100%;
+    } 
+    nav.active ul
+    {
+      display: block;
+    } 
+    nav.active ul li a
+    {
+      margin: 0;
+    } 
+ }
+ 
+ /**FOOTER START***/
+ footer{
+   position: fixed;
+   bottom: 0px;
+   width: 100%;
+   background: #a23s4b;
+ }
+ .main-containt{
+  display:flex;
+ }
+ .main-containt .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+ }
+ .box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+ }
+ .box .content{
+  margin: 20px 0 0 0;
+ }
+ .left .content p{
+  text-align: justify;
+ }
+ .left .content .social{
+  margin: 20px 0 0 0;
+ }
+ .left .content .social a{
+  padding: 0 20px;
+ }
+ .left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+ }
+ .left .content .social a span:hover{
+  background: #f12020;
+ }
+</style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">MEDITATION</a>
+      <div class="menu-toggle"></div>	 
+	   <nav>
+	     <ul>
+	       <li><a href="#" class="active">Home</a></li>
+		   <li><a href="#">About</a></li>
+		   <li><a href="#">MEDITATION WITH MENTAL HEALTH</a></li>
+		   <li><a href="#">Review</a></li>
+	    </ul>	
+	</nav>
+	<div class="clearfix"></div>
+ </header>
+    <p>
+		   	   Meditation is often defined as thinking continuously about one object of thought. We often get stuck on this definition, however, and lose the real purpose of meditation. Meditation must reveal the true nature of that object upon which we are meditating. Such revelation comes not as a thought, but as a feeling. Therefore, meditation is a process in which we shift from thinking to feeling. It is a journey from the complexity of mind to the simplicity of heart. It is for this reason that most methods of meditation involve the heart.
+               
+		   </p>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" 
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$('.menu-toggle').click(function(){	
+  		$('.menu-toggle').toggleClass('active')	
+  		$('nav').toggleClass('active')
+  		})
+  	})
+  </script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <footer>
+       <div class="main-containt">
+         <div class="left box">
+           <h2>About us</h2>
+           <div class="content">
+             <p>Hello this is a pege where we talik about mental health .</p>
+             <div class="social">
+               <a href="#"><span class="fab fa-facebook-f"></span></a>
+               <a href="#"><span class="fab fa-twitter"></span></a>
+               <a href="#"><span class="fab fa-instagram"></span></a>
+               <a href="#"><span class="fab fa-youtube"></span></a>
+             </div>
+            </div>
+           </div>
+           <div class="center box">
+             <h2>Address</h2>
+              <div class="content">
+                <div class="place">
+                  <span class="fas fa-map-marker-alt"></span>
+                  <span class="text">A.C.D Road-754320</span>
+                </div>
+                  <div class="phone">
+                  <span class="fas fa-phone-alt"></span>
+                  <span class="text">033-754320</span>
+              </div>
+              <div class="email">
+                  <span class="fas fa-envelope"></span>
+                  <span class="text">abc@gmail.com</span>
+           </div>
+          </div>
+         </div>
+           <div class="right box">
+             <h2>Contact us</h2>
+              <div class="content">
+                <form action="#">
+                  <div class="email">
+                    <div class="text">Email *</div>
+                      <input type="email" required>
+
+                  </div>
+                  <div class="msg">
+                    <div class="text">Message *</div>
+                    <textarea rows="2" cols="25" required></textarea>
+                  </div>
+                  <div class="btn">
+                    <button type="submit">Send</button>
+                  </div>
+                </form>
+              </div>
+           </div>  
+        </div>  
+    </footer>
+ </body>
+ </html>
